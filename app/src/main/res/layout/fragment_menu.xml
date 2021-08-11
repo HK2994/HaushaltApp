@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.MenuFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/navBudgetButton"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="48dp"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/ic_stonk"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/navToDoListButton"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="48dp"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/ic_todo"
+            app:layout_constraintStart_toEndOf="@+id/navBudgetButton"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/navStorageButton"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="48dp"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/ic_storage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/navBudgetButton" />
+
+        <ImageButton
+            android:id="@+id/navSettingsButton"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="48dp"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/ic_settings"
+            app:layout_constraintStart_toEndOf="@+id/navStorageButton"
+            app:layout_constraintTop_toBottomOf="@+id/navToDoListButton" />
+
+        <TextView
+            android:id="@+id/navBudgetDescript"
+            android:layout_width="128dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="48dp"
+            android:text="Balances"
+            android:textAlignment="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/navBudgetButton" />
+
+        <TextView
+            android:id="@+id/navToDoDescript"
+            android:layout_width="128dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="20dp"
+            android:text="To-Do List"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/navBudgetDescript"
+            app:layout_constraintTop_toBottomOf="@+id/navToDoListButton" />
+
+        <TextView
+            android:id="@+id/navStorageDescript"
+            android:layout_width="128dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="48dp"
+            android:text="Storage"
+            android:textAlignment="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/navStorageButton" />
+
+        <TextView
+            android:id="@+id/navSettingsDescript"
+            android:layout_width="128dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="20dp"
+            android:text="Settings"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/navStorageDescript"
+            app:layout_constraintTop_toBottomOf="@+id/navSettingsButton" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

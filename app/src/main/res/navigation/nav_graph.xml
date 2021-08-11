@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/menuFragment">
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.hk2994.haushaltapp.fragments.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menuFragment_to_storageFragment"
+            app:destination="@id/storageFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_toDoListFragment"
+            app:destination="@id/toDoListFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_balanceFragment"
+            app:destination="@id/balanceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/toDoListFragment"
+        android:name="com.hk2994.haushaltapp.fragments.ToDoListFragment"
+        android:label="fragment_to_do_list"
+        tools:layout="@layout/fragment_to_do_list" />
+    <fragment
+        android:id="@+id/storageFragment"
+        android:name="com.hk2994.haushaltapp.fragments.StorageFragment"
+        android:label="fragment_storage"
+        tools:layout="@layout/fragment_storage" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.hk2994.haushaltapp.fragments.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/balanceFragment"
+        android:name="com.hk2994.haushaltapp.fragments.BalanceFragment"
+        android:label="fragment_balance"
+        tools:layout="@layout/fragment_balance" />
+</navigation>
